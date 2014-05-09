@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="unitec.progra2.android.MainActivity"
+    tools:ignore="MergeRootFrame">
+    
+    <TextView
+        android:id="@+id/lbln1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/numero1" />
+
+    <TextView
+        android:id="@+id/lbln2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbln1"
+        android:layout_below="@+id/lbln1"
+        android:layout_marginTop="48dp"
+        android:text="@string/numero2" />
+
+    <EditText
+        android:id="@+id/txtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lbln1"
+        android:layout_alignBottom="@+id/lbln1"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/lbln1"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lbln2"
+        android:layout_alignBottom="@+id/lbln2"
+        android:layout_alignLeft="@+id/txtn1"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/lblresulttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtn2"
+        android:layout_marginTop="46dp"
+        android:layout_toLeftOf="@+id/txtn1"
+        android:text="@string/result" />
+
+    <TextView
+        android:id="@+id/lblresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblresulttitle"
+        android:layout_alignLeft="@+id/txtn2"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btcalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbln2"
+        android:layout_below="@+id/lblresulttitle"
+        android:layout_marginTop="60dp"
+        android:text="@string/button"
+        android:onClick="calcularClick" />
+    
+ </RelativeLayout>
+

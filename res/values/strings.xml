@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MiCalculadora</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="numero1">Numero 1</string>
+	<string name="numero2">Numero 2</string>
+	<string name="result">Resultado:</string>
+	<string name="button">Calcular</string>
+</resources>
